@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+$navy:	#0a192f;
+$lightNavy:	#112240;
+$lightestNavy:	#233554;
+$slate:	#8892b0;
+$lightSlate: #a8b2d1;
+$lightestSlate:	#ccd6f6;
+$white:	#e6f1ff;
+$green:	#64ffda;
+
+
+$border-radius: 4px;
+$nav-height: 100px;
+$nav-scroll-height: 70px;
+$tab-height: 42px;
+$tab-width: 120px;
+
+$breakpoint-medium: 1024px;
+$breakpoint-small: 520px;
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $navy;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: $navy;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $slate;
+    border-radius: 25px;
+}
