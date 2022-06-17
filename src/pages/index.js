@@ -17,7 +17,12 @@ export default function Home() {
     <Helmet>
       <meta charSet="utf-8" />
       <title>Anshuman Talukdar</title>
-      {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+      <link rel="canonical" href="http://mysite.com/example" />
+      <link rel="icon" href="/logo.svg" />
+      <meta name="description" content="I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I am looking for new opportunities to grow as a professional."></meta>
+      <meta name="keywords" content="Web, Software, Developer, Engineer, Anshuman, Talukdar"></meta>
+      <meta name="author" content="Anshuman Talukdar"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </Helmet>
     <Navbar/>
     <Hero/>

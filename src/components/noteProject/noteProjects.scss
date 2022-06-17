@@ -20,7 +20,7 @@
     .noteProjects__grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 15px;
         grid-row-gap: 15px;
     }
@@ -32,6 +32,7 @@
     padding: 40px 30px;
     background-color: $lightNavy;
     border-radius: 5px;
+    height: 100%;
 
     .singleNoteProjects__top{
 

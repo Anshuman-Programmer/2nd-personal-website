@@ -5,25 +5,26 @@ import "./noteProjects.scss"
 import DriveFileMoveOutlinedIcon from '@mui/icons-material/DriveFileMoveOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
+import { noteAbleProjects } from '../../utils/projects';
 
-const SingleNoteProjects = () => {
+const SingleNoteProjects = ({noteAbleProject}) => {
   return (
     <div className='singleNoteProjects'>
       <div className='singleNoteProjects__top'>
         <DriveFileMoveOutlinedIcon />
         <div className='singleNoteProjects__links'>
-          <a className='singleNoteProjects__link'><FileUploadOutlinedIcon/></a>
-          <a className='singleNoteProjects__link'><GitHubIcon/></a>
+          <a className='singleNoteProjects__link' target="_blank" rel="noreferrer" href={noteAbleProject.demo}><FileUploadOutlinedIcon/></a>
+          <a className='singleNoteProjects__link' target="_blank" rel="noreferrer" href={noteAbleProject.code}><GitHubIcon/></a>
         </div>
       </div>
       <div className='singleNoteProjects__mid'>
-        <h4 className='singleNoteProjects__head'>Other Noteworthy Projects</h4>
-        <p className='singleNoteProjects__p'>A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS</p>
+        <h4 className='singleNoteProjects__head'>{noteAbleProject.title}</h4>
+        <p className='singleNoteProjects__p'>{noteAbleProject.desc}</p>
       </div>
       <div className='singleNoteProjects__but'>
-        <span className='singleNoteProjects__a'>React</span>
-        <span className='singleNoteProjects__a'>Express</span>
-        <span className='singleNoteProjects__a'>Spotify API</span>
+        {noteAbleProject.techs.map((tech, i) => (
+          <span key={i} className='singleNoteProjects__a'>{tech}</span>
+        ))} 
       </div>
     </div>
   )
@@ -34,24 +35,11 @@ const NoteProjects = () => {
     <section className='noteProjects'>
       <h3 className='noteProjects__heading'>Other Noteworthy Projects</h3>
       <div className='noteProjects__grid'>
-        <div>
-          <SingleNoteProjects/>
-        </div>
-        <div>
-          <SingleNoteProjects/>
-        </div>
-        <div>
-          <SingleNoteProjects/>
-        </div>
-        <div>
-          <SingleNoteProjects/>
-        </div>
-        <div>
-          <SingleNoteProjects/>
-        </div>
-        <div>
-          <SingleNoteProjects/>
-        </div>
+        {noteAbleProjects.map((noteAbleProject) => (
+          <div key={noteAbleProject.id}>
+            <SingleNoteProjects noteAbleProject={noteAbleProject}/>
+          </div>
+        ))}
       </div>
     </section>
   )
