@@ -54,4 +54,12 @@ export const noteAbleProjects = [
         demo: "https://vex-book-facebook-clone.vercel.app/",
         code: "https://github.com/Anshuman-Programmer/VexBook-facebook-clone"
     },
+    {
+        id: 4,
+        title: "Vexgle",
+        desc: "Built a Google clone using gatsby js and google search API.",
+        techs: ["gatsby js", "Typescript", "REST API"],
+        demo: "https://vexgle.netlify.app/search",
+        code: "https://github.com/Anshuman-Programmer/vexgle"
+    },
 ]

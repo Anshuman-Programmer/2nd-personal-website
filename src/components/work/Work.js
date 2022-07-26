@@ -1,12 +1,12 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "./work.scss"
 import { jobs } from '../../utils/jobs';
 
 const SingleWork = ({job}) => {
     return (
         <div className='singleWork'>
-            <h3 className='singleWork__heading'>{job.designation} <span>@ {job.title}</span></h3>
+            <h3 className='singleWork__heading'>{job.designation} <a target="_blank" href={job.link}>@ {job.title}</a></h3>
             <div className='singleWork__time'>{job.time}</div>
             {job.points.map((point, i) => (
                 <p key={i} className='singleWork__point'>{point}</p>

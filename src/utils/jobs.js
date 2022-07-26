@@ -1,6 +1,16 @@
 export const jobs = [
     {
         id: 1,
+        title: "Webonex",
+        designation: "React js Engineer",
+        time: "July 2022 - Pesent",
+        points: [
+            "Working with latest technologies like bit.dev and Fauna db",
+        ],
+        link: "https://www.webonex.in/"
+    },
+    {
+        id: 2,
         title: "SmileBots",
         designation: "Associate App Developer",
         time: "September 2021 - May 2022",
@@ -13,7 +23,7 @@ export const jobs = [
         link: "https://smilebots.com/"
     },
     {
-        id: 2,
+        id: 3,
         title: "Developer",
         designation: "Freelance",
         time: "January 2021 - September 2021",
@@ -25,7 +35,7 @@ export const jobs = [
         link: "https://www.instagram.com/vexrgfx/"
     },
     {
-        id: 3,
+        id: 4,
         title: "Designer",
         designation: "Freelance",
         time: "January 2021 - September 2021",

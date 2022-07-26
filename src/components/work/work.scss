@@ -102,11 +102,12 @@
         letter-spacing: 2;
         margin-bottom: 6px;
 
-        span{
+        a{
 
             color: $green;
             font-weight: 700;
             font-family: 'lato', monospace;
+            cursor: pointer;
 
         }
 
@@ -237,7 +238,7 @@
             letter-spacing: 2;
             margin-bottom: 6px;
     
-            span{
+            a{
     
                 color: $green;
                 font-weight: 700;
@@ -377,7 +378,7 @@
             letter-spacing: 2;
             margin-bottom: 6px;
     
-            span{
+            a{
     
                 color: $green;
                 font-weight: 700;
