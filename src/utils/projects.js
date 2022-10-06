@@ -62,4 +62,20 @@ export const noteAbleProjects = [
         demo: "https://vexgle.netlify.app/search",
         code: "https://github.com/Anshuman-Programmer/vexgle"
     },
+    {
+        id: 5,
+        title: "Shopping card ",
+        desc: "Built a simple application to demonstrate a shopping card for a paratha store",
+        techs: ["reactjs", "Javascript", "SCSS"],
+        demo: "https://anshuman-paratha.netlify.app/",
+        code: "https://github.com/Anshuman-Programmer/paratha-store"
+    },
+    {
+        id: 6,
+        title: "Admin UI",
+        desc: "Built a simple Admin UI",
+        techs: ["reactjs", "Javascript", "MUI"],
+        demo: "https://vex-admin.netlify.app/",
+        code: ""
+    },
 ]

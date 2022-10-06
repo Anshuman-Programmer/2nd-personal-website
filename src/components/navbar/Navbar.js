@@ -65,7 +65,7 @@ const Navbar = () => {
                 <motion.li variants={navbarAnimation} className="navbar__link"><Link to="#experience">02.<span>Experience</span></Link></motion.li>
                 <motion.li variants={navbarAnimation} className="navbar__link"><Link to="#projects">03.<span>Work</span></Link></motion.li>
                 <motion.li variants={navbarAnimation} className="navbar__link"><Link to="#contact">04.<span>Contact</span></Link></motion.li>
-                <motion.li variants={navbarAnimation} className="navbar__link"><a variants={navbarAnimation} className="resume__button" download="Anshuman-Talukdar-Resume" href={Resume}>Resume</a></motion.li>
+                <motion.li variants={navbarAnimation} className="navbar__link"><a variants={navbarAnimation} className="resume__button" target="_blank" rel="noreferrer" href={"/resume.pdf"}>Resume</a></motion.li>
                 <motion.li variants={navbarAnimation} className="navbar__link menu__btn" onClick={() => setOpen(!open)}><MenuRoundedIcon/></motion.li>
             </motion.ul>
         </div>

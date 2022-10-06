@@ -13,8 +13,8 @@ const SingleNoteProjects = ({noteAbleProject}) => {
       <div className='singleNoteProjects__top'>
         <DriveFileMoveOutlinedIcon />
         <div className='singleNoteProjects__links'>
-          <a className='singleNoteProjects__link' target="_blank" rel="noreferrer" href={noteAbleProject.demo}><FileUploadOutlinedIcon/></a>
-          <a className='singleNoteProjects__link' target="_blank" rel="noreferrer" href={noteAbleProject.code}><GitHubIcon/></a>
+          {noteAbleProject.demo && <a className='singleNoteProjects__link' target="_blank" rel="noreferrer" href={noteAbleProject.demo}><FileUploadOutlinedIcon/></a>}
+          {noteAbleProject.code && <a className='singleNoteProjects__link' target="_blank" rel="noreferrer" href={noteAbleProject.code}><GitHubIcon/></a>}
         </div>
       </div>
       <div className='singleNoteProjects__mid'>
