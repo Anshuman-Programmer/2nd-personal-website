@@ -7,14 +7,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
 import { noteAbleProjects } from '../../utils/projects';
 
-const SingleNoteProjects = ({noteAbleProject}) => {
+const SingleNoteProjects = ({ noteAbleProject }) => {
   return (
     <div className='singleNoteProjects'>
       <div className='singleNoteProjects__top'>
         <DriveFileMoveOutlinedIcon />
         <div className='singleNoteProjects__links'>
-          {noteAbleProject.demo && <a className='singleNoteProjects__link' target="_blank" rel="noreferrer" href={noteAbleProject.demo}><FileUploadOutlinedIcon/></a>}
-          {noteAbleProject.code && <a className='singleNoteProjects__link' target="_blank" rel="noreferrer" href={noteAbleProject.code}><GitHubIcon/></a>}
+          {noteAbleProject.demo && <a className='singleNoteProjects__link' aria-label={noteAbleProject.title} target="_blank" rel="noreferrer" href={noteAbleProject.demo}><FileUploadOutlinedIcon /></a>}
+          {noteAbleProject.code && <a className='singleNoteProjects__link' aria-label={noteAbleProject.title} target="_blank" rel="noreferrer" href={noteAbleProject.code}><GitHubIcon /></a>}
         </div>
       </div>
       <div className='singleNoteProjects__mid'>
@@ -24,7 +24,7 @@ const SingleNoteProjects = ({noteAbleProject}) => {
       <div className='singleNoteProjects__but'>
         {noteAbleProject.techs.map((tech, i) => (
           <span key={i} className='singleNoteProjects__a'>{tech}</span>
-        ))} 
+        ))}
       </div>
     </div>
   )
@@ -37,7 +37,7 @@ const NoteProjects = () => {
       <div className='noteProjects__grid'>
         {noteAbleProjects.map((noteAbleProject) => (
           <div key={noteAbleProject.id}>
-            <SingleNoteProjects noteAbleProject={noteAbleProject}/>
+            <SingleNoteProjects noteAbleProject={noteAbleProject} />
           </div>
         ))}
       </div>

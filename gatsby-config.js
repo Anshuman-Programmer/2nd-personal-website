@@ -9,7 +9,7 @@ module.exports = {
     title: 'Anshuman Talukdar',
     description:
       'Anshuman Talukdar is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+    siteUrl: 'https://anshumantalukdar.netlify.app/',
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@anshutalukdar',
   },
@@ -17,6 +17,16 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-image`
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://anshumantalukdar.netlify.app',
+        sitemap: 'https://anshumantalukdar.netlify.app/sitemap-index.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
 }

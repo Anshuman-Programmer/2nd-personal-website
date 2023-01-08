@@ -4,7 +4,7 @@ import "./footer.scss"
 const Footer = () => {
   return (
     <footer className='footer'>
-      <a className='footer__link' target="_blank" href='https://github.com/Anshuman-Programmer/2nd-personal-website'>Built by Anshuman Talukdar</a>
+      <a className='footer__link' target="_blank" aria-label="Website code" href='https://github.com/Anshuman-Programmer/2nd-personal-website'>Built by Anshuman Talukdar</a>
     </footer>
   )
 }
