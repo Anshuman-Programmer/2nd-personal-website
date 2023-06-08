@@ -11,7 +11,7 @@ const About = () => {
           <div className='about__left'>
               <div className='about__leftp'>
                   <p>Hello! My name is Anshuman and I enjoy building things that live on the web. My interest in web development started back in 2020 when I decided to make a website from my design service which taught me a lot about HTML & CSS!</p>
-                  <p>Fast-forward to today, and I’ve had the privilege of working at a start-up where I got the chance to build a product for a  huge corporation. My main focus these days is building accessible, inclusive products and digital experiences.</p>
+                  <p>Looking back at the journey thus far, I have been fortunate to engage in collaborations ranging from start-ups to multinational corporations, affording me invaluable opportunities to construct a diverse array of intricate products. Presently, my primary emphasis lies in the development of accessible and inclusive products, along with the creation of digital experiences that cater to a wide range of individuals.</p>
                   <p>Here are a few technologies I’ve been working with recently:</p>
               </div>
               <ul className='about__skills'>

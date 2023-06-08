@@ -1,5 +1,17 @@
 export const jobs = [
     {
+        id: 12,
+        title: "Infoware",
+        designation: "Software Developer",
+        time: "November 2022 - Fabuary 2023",
+        points: [
+            "I was accountable for enhancing Search Engine Optimization (SEO) for several prominent websites, resulting in a significant improvement in their audit score from 6% to 98%. This accomplishment led to a commendable surge in traffic, with an approximate increase of 34%. ",
+            "In addition to collaboratively planning and meticulously designing the architecture for the application, I swiftly integrated crucial business features that played a pivotal role in driving growth and success.",
+            "Furthermore, as part of my responsibilities, I took charge of ensuring the timely delivery of project milestones after each sprint. This involved closely monitoring the progress of development tasks, coordinating with the team to address any roadblocks, and implementing efficient project management strategies. "
+        ],
+        link: "https://www.infowareindia.com/"
+    },
+    {
         id: 1,
         title: "Techstuff",
         designation: "React js Engineer",
@@ -28,7 +40,7 @@ export const jobs = [
         id: 3,
         title: "Developer",
         designation: "Freelance",
-        time: "November 2020 - September 2021",
+        time: "January 2020 - September 2021",
         points: [
             "Mainly worked on the front-end styling.",
             "Write modern, performant, and robust code for a diverse array of client projects.",
